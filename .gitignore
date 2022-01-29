@@ -1,14 +1,7 @@
+# Jetbrains tools ######################################################################################################
+
 .idea
 
-data/libraries
-data/logs
-data/versions
-data/world
-data/banned-ips.json
-data/banned-players.json
-data/ops.json
-data/server.properties
-data/usercache.json
-data/whitelist.json
+# Volumes ##############################################################################################################
 
-resources/server.jar
+minecraft-data

@@ -9,4 +9,4 @@ services:
     stdin_open: true
     restart: unless-stopped
     volumes:
-      - ./data:/opt/minecraft/data
+        - ./minecraft-data:/opt/minecraft
