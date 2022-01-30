@@ -3,4 +3,4 @@ if [[ -d /tmp/minecraft ]]; then
     rm -r /tmp/minecraft
 fi
 
-sh /opt/minecraft/run.sh --nogui
+java -Xms1G -Xmx2G -jar /opt/minecraft/server.jar --nogui
