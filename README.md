@@ -5,19 +5,26 @@
 Start server : 
 
 ```bash
-docker compose up
-```
-
-Stop server :
-m
-```bash
-docker compose stop
+# Start container in background
+docker compose up -d
 ```
 
 Show server logs :
 
 ```bash
 docker log -f minecraft
+```
+
+Restart server :
+
+```bash
+docker compose restart
+```
+
+Stop server :
+
+```bash
+docker compose stop
 ```
 
 Create minecraft server data backup : 
