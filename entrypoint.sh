@@ -7,6 +7,13 @@ if [ ! $MINECRAFT_VERSION ]; then
     return
 fi
 
+
+if [ ! $MINECRAFT_MEMORY ]; then
+    echo "ERROR: Not found 'MINECRAFT_MEMORY' environment variable."
+    return
+fi
+
+minecraft_memory=$MINECRAFT_MEMORY
 minecraft_server_jar_file=spigot-$MINECRAFT_VERSION.jar
 minecraft_server_jar_filepath=$minecraft_data_path/$minecraft_server_jar_file
 
@@ -33,4 +40,4 @@ fi
 
 cd $minecraft_data_path
 
-java -Xmx1024M -Xms1024M -jar $minecraft_server_jar_filepath nogui
+java -Xmx$minecraft_memory -Xms$minecraft_memory -jar $minecraft_server_jar_filepath nogui

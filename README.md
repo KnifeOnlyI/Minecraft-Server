@@ -12,7 +12,7 @@ docker compose up -d
 Show server logs :
 
 ```bash
-docker log -f minecraft
+docker logs -f minecraft
 ```
 
 Restart server :

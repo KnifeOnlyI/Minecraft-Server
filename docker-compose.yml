@@ -10,5 +10,6 @@ services:
     restart: unless-stopped
     environment:
       - MINECRAFT_VERSION=1.21.1
+      - MINECRAFT_MEMORY=512M
     volumes:
       - ./data:/opt/minecraft/data
